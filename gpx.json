@@ -1,50 +1,50 @@
 {
   "name": "ctrmagic",
-  "version": "4",
+  "version": "6",
   "symbols": "1",
   "origin": "c++",
   "engineVersion": "",
   "webglAttributes": {
-    "maxWebGLVersion": 1
+      "maxWebGLVersion": 1
   },
   "runtime": {
-    "aspect": [
-      0.66,
-      1
-    ],
-    "orientation": "portrait",
-    "res": [
-      {
-        "glob": "emscripten/**",
-        "root": "emscripten/"
-      }
-    ]
+      "aspect": [
+          0.66,
+          0.95
+      ],
+      "orientation": "portrait",
+      "res": [
+          {
+              "glob": "emscripten/**",
+              "root": "emscripten/"
+          }
+      ]
   },
-  "backendVersion": 27,
-  "tinyLoaderScript": "tiny-loader.js",
+  "backendVersion": 31,
+  "tinyLoaderScript": "scripts/tiny-loader.js",
   "sdkScripts": [
-    "sdk.js",
-    "gamepix-adapter.js"
+      "scripts/sdk.js",
+      "scripts/gamepix-adapter.js"
   ],
   "workerScripts": {
-    "browserImageLoader": "browser-image-loader.js",
-    "wasmImageLoader": {
-      "wasm": "wasm-image-loader.wasm",
-      "wasmJs": "wasm-image-loader.js"
-    }
+      "browserImageLoader": "scripts/browser-image-loader.js",
+      "wasmImageLoader": {
+          "wasm": "scripts/wasm-image-loader.wasm",
+          "wasmJs": "scripts/wasm-image-loader.js"
+      }
   },
   "sizes": {
-    "br/bin.data.js.br": 5782,
-    "br/bin.data.wasm.br": 2097927,
-    "br/wbin.js.br": 46326,
-    "br/wbin.wasm.br": 825751,
-    "gz/bin.data.js.gz": 7525,
-    "gz/bin.data._.js.gz": 2321067,
-    "gz/wbin.js.gz": 54046,
-    "gz/wbin._.js.gz": 938577,
-    "bin.data.wasm": 7512158,
-    "bin.data.js": 35563,
-    "wbin.wasm": 2516319,
-    "wbin.js": 212229
+      "br/wbin.js.br": 45745,
+      "br/wbin._.js.br": 722662,
+      "br/bin.data.js.br": 5774,
+      "br/bin.data._.js.br": 1979084,
+      "gz/wbin.js.gz": 53376,
+      "gz/wbin._.js.gz": 942451,
+      "gz/bin.data.js.gz": 7508,
+      "gz/bin.data._.js.gz": 2321141,
+      "wbin.js": 209001,
+      "wbin._.js": 2530942,
+      "bin.data.js": 35534,
+      "bin.data._.js": 7512049
   }
 }
